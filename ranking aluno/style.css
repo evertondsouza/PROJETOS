@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #070707;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: #ffff;
+    font-size: 1.8em;
+
+}
+p{
+    color: #ffff; 
+    font-size: 1.1em;
+}
+.container {
+        margin: 0 auto; /* Centraliza a tabela na página */
+        max-width: 100px; /* Define a largura máxima da tabela */
+   
+}
+table {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+  
+    background-color: #6db372;
+    font-weight: bold;
+    font-size: 16px;
+    color: #070707;
+    padding: 8px;
+    border-spacing: 3px; /* Espaçamento entre as células */
+    border-radius: 9px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 9px;
+}
+
+th {
+    background-color: #447047; /* Azul padrão */
+    color: white;
+    border-radius: 9px 9px 9px 9px;
+}

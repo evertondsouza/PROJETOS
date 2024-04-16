@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Ranking</title>
+
+
+</head>
+<body>
+
+<h2>Ranking</h2>
+<p>
+    Conheça quem são os destaques dessa semana e estão acelerando a sua carreira em tecnologia no KuruminDev.
+  </p>
+<table id="rankingTable">
+  <tr>
+    <th>Posição</th>
+    <th>Nome</th>
+    <th>Pontuação</th>
+  </tr>
+</table>
+
+<script>
+    // Dados de exemplo
+    var players = [
+        { nome: "Evilacio", pontuacao: 100 },
+        { nome: "Josimar", pontuacao: 85 },
+        { nome: "Fernanda", pontuacao: 72 },
+        { nome: "Amanda", pontuacao: 64 },
+        { nome: "Kemilly", pontuacao: 150 }
+    ];
+
+    // Ordena os jogadores por pontuação
+    players.sort(function(a, b) {
+        return b.pontuacao - a.pontuacao;
+    });
+
+    var table = document.getElementById("rankingTable");
+
+    // Adiciona os jogadores à tabela
+    for (var i = 0; i < players.length; i++) {
+        var player = players[i];
+        var row = table.insertRow(i + 1);
+        var positionCell = row.insertCell(0);
+        var nameCell = row.insertCell(1);
+        var scoreCell = row.insertCell(2);
+        positionCell.innerHTML = (i + 1) + "º";;
+        nameCell.innerHTML = player.nome;
+        scoreCell.innerHTML = player.pontuacao;
+    }
+</script>
+
+</body>
+</html>
